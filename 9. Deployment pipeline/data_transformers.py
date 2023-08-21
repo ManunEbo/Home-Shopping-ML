@@ -1,9 +1,7 @@
 def transform_and_predict(input_data_1, input_data_2):
     import pandas as pd
-    import numpy as np
     
     import joblib
-
 
     # Scaling the values
     from sklearn.preprocessing import binarize
@@ -66,6 +64,7 @@ def transform_and_predict(input_data_1, input_data_2):
     # load the StandardScaler
     X_scaler = joblib.load("../8. Models/StandardScaler_models/Regressor_X_Scaler_19082023")
     last_7_days_regressor = X_scaler.transform(last_7_days_regressor)
+
 
     # load the regressor model
     GBR = joblib.load("../8. Models/Regressor_models/GBRegressor_19082023")
