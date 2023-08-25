@@ -265,18 +265,18 @@ def item_name_features(input_data):
 
     # feature list for classifier model
     features_classifier = ['Date_diff', 'Nbr_items_per_wk', 'Expenditure_per_wk',
-		       'Total_Exp_wk_perc', 'AVG_exp_item_per_wk', 'Bread_wk',
-		       'Cooked_meats_wk', 'Raw_meats_wk', 'Eating_out_wk', 'Snacks_wk',
-		       'Drinks_wk', 'Vegetables_wk', 'Cooking_base_wk', 'Dairy_produce_wk',
-		       'Seasoning_wk', 'Breakfast_wk', 'Transport_wk',
-		       'Cosmetics_and_selfcare_wk', 'House_and_kitchen_wk']
+                            'Total_Exp_wk_perc', 'AVG_exp_item_per_wk', 'Bread_wk',
+                            'Cooked_meats_wk', 'Raw_meats_wk', 'Eating_out_wk', 'Snacks_wk',
+                            'Drinks_wk', 'Vegetables_wk', 'Fruit_wk', 'Cooking_base_wk',
+                            'Dairy_produce_wk', 'Breakfast_wk', 'Transport_wk',
+                            'Tech_and_services_wk', 'Cosmetics_and_selfcare_wk',
+                            'House_and_kitchen_wk']
     
     # feature list for regressor model
-    features_regressor = ['Drinks_wk', 'Fruit_wk', 'Tech_and_services_wk', 'Snacks_wk',
-                        'Vegetables_wk', 'Bread_wk', 'Raw_meats_wk', 'Breakfast_wk',
-                        'Nbr_items_per_wk', 'Cooking_base_wk', 'Transport_wk',
-                        'Cosmetics_and_selfcare_wk', 'Electronics_wk', 'Education_wk',
-                        'Total_Exp_wk_perc', 'Total_Price', 'Nbr_trips_per_wk']
+    features_regressor = ['Total_Price', 'Nbr_trips_per_wk', 'Total_Exp_wk_perc', 'Raw_meats_wk',
+                          'Vegetables_wk', 'Cooking_base_wk', 'Breakfast_wk', 'Transport_wk',
+                          'Electronics_wk', 'Education_wk', 'Cosmetics_and_selfcare_wk',
+                          'Clothes_and_shoes_wk']
 
     # indicator list for deriving new weekly features
     indicator_list = ['Bread', 'Cooked_meats', 'Raw_meats', 'Snacks', 'Drinks', 'Vegetables','Fruit',

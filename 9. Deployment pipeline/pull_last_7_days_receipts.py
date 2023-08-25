@@ -99,6 +99,8 @@ def attach_new_receipt_data(input_data, venue_g, Total_Nbr_of_Items_g, Total_Pri
     last_7_days_date_diff['week_of_year'] = last_7_days_date_diff.Receipt_Date.dt.isocalendar().year.map(str)+ "_" +  \
     last_7_days_date_diff.Receipt_Date.dt.isocalendar().week.map(str)
 
+    # calculate number of trips per week
+    last_7_days_date_diff['Nbr_trips_per_wk'] = last_7_days_date_diff.groupby(['week_of_year'])['Receipt_id'].transform('nunique')
 
     # Calculate number of items per week
     last_7_days_date_diff['Nbr_items_per_wk'] =\
@@ -120,7 +122,7 @@ def attach_new_receipt_data(input_data, venue_g, Total_Nbr_of_Items_g, Total_Pri
     last_7_days = pd.merge(
         last_7_days,
         last_7_days_date_diff[['Receipt_id','Date_diff','week_of_year',
-                            'Expenditure_per_wk','Total_Exp_wk_perc',
+                            'Expenditure_per_wk','Total_Exp_wk_perc','Nbr_trips_per_wk',
                             'Nbr_items_per_wk','AVG_exp_item_per_wk']],
         on='Receipt_id',
         how='left'
