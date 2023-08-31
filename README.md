@@ -248,6 +248,8 @@ In hear Evidently AI monitoring reports are stored.This includes:<br>
 Looking forward, the objective is to:<br>
 <ul>
 <li>Rebuild the models to include important features that were left out of the SelectFrom algorithm</li>
+<li>Consider regularization parameters for the models, non has been specified thus far, thus default was applied.</li>
+<li>Add a data dictionary</li>
 <li>Develop time series models for comparison</li>
 <li>Build deep learning versions of the models for comparison.</li>
 <li>To fully deploy the models with AWS</li>
