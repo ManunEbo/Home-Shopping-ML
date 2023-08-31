@@ -32,7 +32,7 @@ def transform_and_predict(input_data_1, input_data_2):
 
     # binarize with the threshold
     loaded_pred_class_binarize = binarize([loaded_prob],threshold=0.1423)[0]
-    loaded_pred_class_binarize
+    
 
 
     # ***************************************************************************************************************
