@@ -53,32 +53,32 @@ and stabilize expenditure.
 <h3 style="color: green;">A problem on the nature of time series: Data</h3>
 <p>
 <strong>
-Michael Burry did not have a time series/forcasting model that predicted an imenent<br>
-stock market crash in 2008. Instead, Michael stumbled onto data which indicated<br>
+Michael Burry did not have a time series/forcasting model that predicted an imenent
+stock market crash in 2008. Instead, Michael stumbled onto data which indicated
 a serious problem in the subprime lending, the rest is common sense.</strong><br><br>
 <strong>
 Back in 2006-2007 no financial forcasting models successfully predicted the crash in 2008:<br> 
 they didn't have the data that indicated a serious problem in the underlying assets, subprime lending.</strong><br><br>
 <strong>
 Forecasting models do well when there is data supporting the trend:<br>
-you can see a wave building by the sea side and follow it until it collapses but you can't<br>
-predict where and when it will collapse with certainty; nore where and when the next one will arise<br>
+you can see a wave building by the sea side and follow it until it collapses but you can't
+predict where and when it will collapse with certainty; nore where and when the next one will arise
 with certainty, unless you have multiple detectors beneath the waters.</strong><br><br>
 <strong>
 But you know in advance that one will arise, eventually.</strong><br><br>
 
 <h3 style="color: green;">A problem on the nature of time series: Algorithms</h3>
 <strong>
-Tree based algorithms such as random forest and XGBoost employ bootstrapping and are also used in combination with cross validation.<br>
-Bootstrapping process involves randomly sampling from the data the model is trained on. Thus, within the training set, relatively future<br>
+Tree based algorithms such as random forest and XGBoost employ bootstrapping and are also used in combination with cross validation.
+Bootstrapping process involves randomly sampling from the data the model is trained on. Thus, within the training set, relatively future
 data is used to predict relatively past data i.e. data leakage.<br><br>
 
-Cross validation is a powerful technique used in model validation; in splitting the data into k-folds each fold is used once as testing set<br>
-which means that the earlier folds, relative past data, will be used to validate later folds, relative future data i.e. data that wouldn't<br>
-otherwise be available at the time, will be used for model training. Once again, this is a form of data leakage.<br><br>
+Cross validation is a powerful technique used in model validation; in splitting the data into k-folds each fold is used once as testing set
+which means that the earlier folds, relative past data, will be used to validate later folds, relative future data i.e. data that wouldn't
+otherwise be available at the time, will be used for model training. Once again, this is a form of data leakage.<br>
 
-Developing time series models with these techniques is inconsistent with the intuition behind train test split for time series.<br>
-Given the much spoken success of these models, time series considerations when splitting the data into train and test should be ignored in general<br>
+Developing time series models with these techniques is inconsistent with the intuition behind train test split for time series.
+Given the much spoken success of these models, time series considerations when splitting the data into train and test should be ignored in general
 as such consideration is already violated in training the models.<br></strong><br>
 <strong>
 So the question, is time series real data science?
