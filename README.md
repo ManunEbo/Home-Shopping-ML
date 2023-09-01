@@ -45,7 +45,7 @@ I want to smooth the shopping experience: I want to reduce the time spent shoppi
 trips I do per week; I want to reduce the variability in expenditure using a planning tool that
 provides a good estimate of expenditure given shopping list.<br>
 
-These tools will be used in combination to optimise the shopping experience: reduce time spent shopping
+These tools will be used in combination to optimize the shopping experience: reduce time spent shopping
 and stabilize expenditure.
 
 </p>
